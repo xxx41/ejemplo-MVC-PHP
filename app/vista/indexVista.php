@@ -8,7 +8,7 @@
         <h3>Lista de links</h3>
         <?php
         foreach ($selectAll as $link) {
-            echo $link->TITULO." - ". $link->LINK ."<br>";
+            echo $link->TITULO." - <a href='". $link->LINK ."' target='_blank'>Enlace<a><br>";
         }
         ?>
         <a href="<?php echo $ayuda->url("link", "newlink");?>">Añadir link</a>
